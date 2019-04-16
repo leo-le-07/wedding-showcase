@@ -29,6 +29,13 @@ const StyledContainer = styled.div`
     /* font-family: 'Muli', sans-serif; */
     font-size: ${fontSizes.large30};
   }
+
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 600px) {
+    .name {
+      font-size: ${fontSizes.large45};
+    }
+  }
 `;
 
 export default Header;
